@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TicTacToe</title>
+</head>
+<body>
+<style> 
+           td{
+               width:1280px;
+               padding: 10px;
+               line-height: 1.5;
+           }
+       </style>
+
+<h1 align="center">Izdelava TicTacToe igre</h1>
+<table align="left">
+<td>
+Ko sem hotel začeti izdelavo igrice sem si moral prvo izbrati dovolj dober program za to. Imel sem par programov v mislih v katerih bi lahko naredil igro ampak mi je Unity najbolj iztopal sato sem se odločil za njega. Po instalaciji Unitya sem si moral izbrati ali hočem narediti 3D ali pa 2D igro. Izbral sem 2D, ker se mi je zdela bolj smiselna za tako igro, kot jo imam jaz, nato sem utipkal ime igre in tako sem bil pripravljen za izdelavo. <br>
+<br>
+Prva stvar, ki sem jo naredil, je bilo to da sem kamero naredil pixel perfect, da pixeli ne bi bili zamagljeni. To sem naredil tudi na vseh ostalih komponentih, ki sem jih kasneje dodal v igro. Naslednji korak je bil, da dodam sprite, ki sem jih najdel na internetu. Nato sem tudi njih naredil Pixel Perfect. Dodal sem samo tiste, ki jih bom rabil za izdelavo podlage, na kateri bomo vstavljali X in O znake in jim spremenil pozicijo x in y. Isto sem narediil tudi kameri. Na game board sem dodal sprite None. za izdelavo igre bomo imeli 9 none pritov, ki se bodo spreminjali v X ali O. vsem elementom, ki sem jih dal na podlago sem jim dodelil z pozicijo -2, da bi se prikazali na GameBoardu ne pa za njim. Naslednji korak je bilo to, da sem sprogramiral komponente Nought, None in Crosses, da postanejo element BoardItema. Nato sem ustvaril prefab None elementa in ga izbrisal iz GameScena. naslednji korak je bilo to, da smo naredili novi script in ga pripeli na GameBoard. V njemu smo sprogramerali 9 None Itemov, v katere bomo vnašali X in O. Imel sem par problemov z postavitvijo, ki sem jih pozneje popravil v kodi. Če hočemo, da vse normalno deluje moramo prefabu dodati novi component Box Collider 2D. Nato pa v kodi napisemo vse potrebno, da bodo kliki miške zaznani. vnesemo tudi podatke, da Znak X vedno prvi začne in, da se po vsaki potezi znaka zamenjata, ampak še vedno jih nemoremo vnašati v polja katera mi hočemo. Vedno se vstavi v prvo polje in se po enem miškinem kliku oba zamenjata v enem polju, kar smo pozneje popravili v kodi. Zdaj lahko vstavljamo znake kamorkoli hočemo in se po enem kliku znaka zamenjata ampak nam ne napiše, ko eden od igralcev zmaga. Moramo vnesti kodo, ki bo izpisala, da je igralec zmagal po tem, ko je vnesel 3 ista znaka enega zraven drugega. Moramo poskrbeti, da bo program zaznal oba znaka in da jih zazna navpično, vodoravno in diagonalno. Ko sem s tem opravil sem dodal Win sprite v GameScene in mu določil x in y pozicijo. Nato sem v kodi dodal nov game object, ki se bo pokazal ko bo igralec zmagal. Potem sem dodal Win sprite v Game board Script, zato da bo vse delalo kakor mora. Zdaj, ko zmagamo se pojavi znak Win. Edino, kar nam še preostane je to, da se po končani igri vrnemo na Main Menu. V Unityu naredimo nov Scene, kateri bo za Main Menu. V njemu, kot v drugih naštimamo kamero in v kodi napišemo to, da ko se igra konča naj nas vrne na Main Menu. Preden nas igra vrne na Main Menu moramo počakati 3 sekunde, ker smo to napisali v kodi. Zdaj še nimamo Primernega Main Menua ga moramo dodati. Dodati moramo tudi Play in Exit gumbe, ki jih bomo imeli na Main Menu. Vse naredimo Pixel Perfect. Vsem nastavimo prave kordinate. Naredimo novi Script za Main Menu. V njemu bomo določili naloge Play in Exit gumbu. Moramo jim dodati tudi Box Collider 2D komponento. In tako smo uspešno naredili TicTacToe igro.                                                     </td> 
+</table>                                       
+
+</body>
+</html>
